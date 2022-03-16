@@ -9,11 +9,11 @@ public class Person {
     private String sutName;
     private int age;
 
-    @Autowired
-    public Person(Pet pet) {
-        System.out.println("Person is created");
-        this.pet = pet;
-    }
+//    @Autowired
+//    public Person(Pet pet) {
+//        System.out.println("Person is created");
+//        this.pet = pet;
+//    }
 
     public void callYourPet() {
         System.out.println("Hello, my lovely Pet!");
@@ -36,6 +36,7 @@ public class Person {
         this.age = age;
     }
 
+    @Autowired
     public void setPet(Pet pet) {
         System.out.println("Class person: set pet");
         this.pet = pet;
