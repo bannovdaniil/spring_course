@@ -1,17 +1,18 @@
 package spring_introduction;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("personBean")
 public class Person {
-    @Autowired
+    // @Autowired
     private Pet pet;
     private String sutName;
     private int age;
 
 //    @Autowired
-//    public Person(Pet pet) {
+//    public Person(@Qualifier("dogBean") Pet pet) {
 //        System.out.println("Person is created");
 //        this.pet = pet;
 //    }
@@ -37,9 +38,10 @@ public class Person {
         this.age = age;
     }
 
-//    @Autowired
-//    public void setPet(Pet pet) {
-//        System.out.println("Class person: set pet");
-//        this.pet = pet;
-//    }
+    @Autowired
+    @Qualifier(value = "dogBean")
+    public void setPet(Pet pet) {
+        System.out.println("Class person: set pet");
+        this.pet = pet;
+    }
 }
