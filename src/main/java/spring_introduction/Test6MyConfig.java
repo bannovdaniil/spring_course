@@ -9,7 +9,8 @@ public class Test6MyConfig {
 
         Person person = context.getBean("personBean", Person.class);
         person.callYourPet();
-
+        System.out.println("person.getSurName() = " + person.getSurName());
+        System.out.println("person.getAge() = " + person.getAge());
         context.close();
     }
 }

@@ -12,7 +12,7 @@ public class Test6Autowate {
         Person person = context.getBean("personBean", Person.class);
         person.callYourPet();
 
-        System.out.println("person.getSutName() = " + person.getSutName());
+        System.out.println("person.getSutName() = " + person.getSurName());
         System.out.println("person.getAge() = " + person.getAge());
 
         context.close();

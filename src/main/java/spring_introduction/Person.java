@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
 public class Person {
     // @Autowired
     private Pet pet;
-//    @Value("${person.surname}")
-    private String sutName;
-//    @Value("${person.age}")
+    @Value("${person.surname}")
+    private String surName;
+    @Value("${person.age}")
     private int age;
 
     @Autowired
@@ -25,12 +25,12 @@ public class Person {
         pet.say();
     }
 
-    public String getSutName() {
-        return sutName;
+    public String getSurName() {
+        return surName;
     }
 
-    public void setSutName(String sutName) {
-        this.sutName = sutName;
+    public void setSurName(String surName) {
+        this.surName = surName;
     }
 
     public int getAge() {
