@@ -7,8 +7,10 @@ public class Test1AspectJ {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(MyConfig.class);
 
+        Book book = context.getBean("book", Book.class);
+
         UniversityLibrary universityLibrary = context.getBean("universityLibrary", UniversityLibrary.class);
-        universityLibrary.getBook();
+        universityLibrary.getBook(book);
         universityLibrary.returnBook();
 
         SchoolLibrary schoolLibrary = context.getBean("schoolLibrary", SchoolLibrary.class);
