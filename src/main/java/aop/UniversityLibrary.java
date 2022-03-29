@@ -5,10 +5,16 @@ import org.aspectj.lang.annotation.Before;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 
-@Component("libraryBean")
+@Component
 @EnableAspectJAutoProxy
-public class Library {
+public class UniversityLibrary {
     public void getBook() {
         System.out.println("Получить книгу");
     }
+
+    public int returnBook() {
+        System.out.println("SchoolLibrary: сдать книгу");
+        return 1;
+    }
+
 }
