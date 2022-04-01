@@ -14,8 +14,12 @@ public class Test2AfterReturning {
 
         University university = context.getBean("university", University.class);
         university.addStudents();
-        List<Student> studentList = university.getStudents();
-        System.out.println("studentList = " + studentList);
+        try {
+            List<Student> studentList = university.getStudents();
+            System.out.println("studentList = " + studentList);
+        } catch (Exception err) {
+            System.out.println("In main catch block: " + err);
+        }
 
         context.close();
     }

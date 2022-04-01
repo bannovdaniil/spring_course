@@ -18,6 +18,9 @@ public class University {
 
     public List<Student> getStudents() {
         System.out.println("getStudents: ");
+
+        System.out.println("students.get(50) = " + students.get(50));
+
         System.out.println("students = " + students);
         return students;
     }
