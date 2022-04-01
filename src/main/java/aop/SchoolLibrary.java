@@ -10,7 +10,7 @@ public class SchoolLibrary {
         System.out.println("SchoolLibrary: Получить книгу");
     }
 
-    public boolean returnBook() {
+     public boolean returnBook() {
         System.out.println("SchoolLibrary: сдать книгу");
         return true;
     }

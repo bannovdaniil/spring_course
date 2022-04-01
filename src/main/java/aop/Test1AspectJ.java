@@ -12,10 +12,7 @@ public class Test1AspectJ {
         UniversityLibrary universityLibrary = context.getBean("universityLibrary", UniversityLibrary.class);
         universityLibrary.getBook(book);
         universityLibrary.returnBook();
-
-        SchoolLibrary schoolLibrary = context.getBean("schoolLibrary", SchoolLibrary.class);
-        schoolLibrary.getBook();
-        schoolLibrary.returnBook();
+        universityLibrary.returnMagazine();
 
         context.close();
     }

@@ -9,11 +9,20 @@ import org.springframework.stereotype.Component;
 @EnableAspectJAutoProxy
 public class UniversityLibrary {
     public void getBook(Book book) {
-        System.out.println("Получить книгу: " + book.getName());
+        System.out.println("UniversityLibrary: Получить книгу: " + book.getName());
     }
 
     public int returnBook() {
-        System.out.println("SchoolLibrary: сдать книгу");
+        System.out.println("UniversityLibrary: сдать книгу");
+        return 1;
+    }
+
+    public void getMagazine(){
+        System.out.println("UniversityLibrary: взять журнал");
+    }
+
+    public int returnMagazine() {
+        System.out.println("UniversityLibrary: сдать журнал");
         return 1;
     }
 
