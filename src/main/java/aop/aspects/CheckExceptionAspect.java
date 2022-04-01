@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Order(30)
 public class CheckExceptionAspect {
-    @Before("aop.aspects.MyPointCut.allGetMethod()")
-    public void beforeCheckException(){
+    @Before("aop.aspects.MyPointCut.allAddMethod()")
+    public void beforeAddCheckException(){
         System.out.println("Order(30) => beforeCheckException");
     }
 }
