@@ -27,10 +27,9 @@ public class UniversityLibrary {
         System.out.println("-".repeat(20));
     }
 
-    public int returnBook() {
+    public String returnBook() {
         System.out.println("UniversityLibrary: сдать книгу");
-        System.out.println("-".repeat(20));
-        return 1;
+        return "Java For Dummies";
     }
 
     public void getMagazine() {
