@@ -28,6 +28,7 @@ public class UniversityLibrary {
     }
 
     public String returnBook() {
+        int a = 10 / 0;
         System.out.println("UniversityLibrary: сдать книгу");
         return "Java For Dummies";
     }
