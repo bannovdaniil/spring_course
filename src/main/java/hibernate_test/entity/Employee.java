@@ -27,4 +27,35 @@ public class Employee {
         this.department = department;
         this.salary = salary;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", department='" + department + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
