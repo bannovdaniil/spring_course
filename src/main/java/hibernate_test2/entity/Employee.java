@@ -68,6 +68,14 @@ public class Employee {
         this.salary = salary;
     }
 
+    public Details getEmpDetails() {
+        return empDetails;
+    }
+
+    public void setEmpDetails(Details empDetails) {
+        this.empDetails = empDetails;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +

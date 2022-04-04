@@ -59,4 +59,14 @@ public class Details {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "Details{" +
+                "id=" + id +
+                ", city='" + city + '\'' +
+                ", phone_number='" + phone_number + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
